@@ -15,3 +15,30 @@
     color: #000;
     background: #FCDA0C;
 }
+#page-content-wrapper {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+#page-content-wrapper .title {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 3.25rem;
+  margin-bottom: 2em;
+  color: #0073ea;
+}
+#page-content-wrapper h1 {
+  font-family: 'Cinzel', serif;
+  color: #F600F0;
+}
+#page-content-wrapper p {
+  font-size: 18pt;
+}
+#page-content-wrapper ul {
+  margin-bottom: .75em;
+}
+#page-content-wrapper li {
+  list-style: none;
+}
+.margin-top {
+  margin-top: 2em;
+}
