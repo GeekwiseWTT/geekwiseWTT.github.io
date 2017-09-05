@@ -1,0 +1,17 @@
+#sidebar-wrapper {
+    background: #7A1501;
+}
+.sidebar-nav > .sidebar-brand a {
+    color: #FFF;
+}
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #FCDA0C;
+}
+.sidebar-nav li a {
+    color: #FFF;
+}
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #000;
+    background: #FCDA0C;
+}
