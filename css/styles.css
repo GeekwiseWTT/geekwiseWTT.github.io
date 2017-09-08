@@ -15,6 +15,9 @@
     color: #000;
     background: #FCDA0C;
 }
+#menu-toggle {
+  position: fixed;
+}
 #page-content-wrapper {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
