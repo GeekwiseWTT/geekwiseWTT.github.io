@@ -32,16 +32,25 @@
 #page-content-wrapper h1 {
   font-family: 'Cinzel', serif;
   color: #F600F0;
+  font-size: 24pt;
 }
 #page-content-wrapper p {
-  font-size: 18pt;
+  font-size: 16pt;
 }
 #page-content-wrapper ul {
   margin-bottom: .75em;
 }
 #page-content-wrapper li {
   list-style: none;
+  font-size: 14pt;
+}
+#page-content-wrapper .small {
+  font-size: 12pt;
+  font-weight: 300;
 }
 .margin-top {
   margin-top: 2em;
+}
+.margin-bottom {
+  margin-bottom: 1em;
 }
