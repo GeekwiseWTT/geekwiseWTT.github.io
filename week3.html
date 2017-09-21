@@ -284,52 +284,172 @@ console.log(username);</pre>
                     </ul>
                   </div>
                 </div> <!-- END DAY 5 -->
-                <!-- <div class="row margin-top">
+                <div class="row margin-top">
                   <div class="col-6">
                     <h1 class="text-left"><strong>Day 6</strong></h1>
                   </div>
                   <div class="col-6">
-                    <p>Go over HW/Time for Questions</p>
-                    <p>GH Pages</p>
-                    <p>Font Awesome/Google Fonts</p>
-                    <p>Templates</p>
-                    <p>Continue Working on Repo/Questions</p>
+                    <p>Strings</p>
+                    <p>Numbers</p>
+                    <p>Math</p>
+                    <p>Date</p>
+                    <p>Challenge</p>
                   </div>
                 </div>
                 <div class="row margin-top">
                   <div class="col-6">
-                    <h1 class="text-left">GH Pages</h1>
+                    <h1 class="text-left">Strings</h1>
                   </div>
                   <div class="col-6">
-                    <p>Set up GH-Pages</p>
+                    <p><strong>.length</strong></p>
+                    <code>console.log('rocky'.length); // 5</code>
+                    <p class="small">The length property represents the length of a string.</p>
+
+                    <p><strong>.charAt()</strong></p>
+                    <code>console.log('rocky'.charAt(2)); // c</code>
+                    <p class="small">Returns the character at the specified index (position)</p>
+
+                    <p><strong>.indexOf()</strong></p>
+                    <code>console.log('rocky'.indexOf('k')); // 3</code>
+                    <p class="small">Returns the position of the first found occurrence of a specified value in a string</p>
+
+                    <p><strong>.concat()</strong></p>
+                    <code>console.log('rocky'.concat(' garcia')); // rocky garcia</code>
+                    <p class="small">Combines the text of two strings and returns a new string.</p>
+
+                    <p><strong>.substring() & .substr()</strong></p>
+                    <p class="small">Extracts the characters from a string</p>
+                    <p class="small"><strong>.substring()</strong></p>
+                    <code>console.log('rocky'.substring(1, 3));  // oc</code>
+                    <p class="small">Returns a subset of a string between one index and another, or through the end of the string.</p>
+                    <p class="small"><strong>.substr()</strong></p>
+                    <code>console.log('rocky'.substr(1, 3));  // ock</code>
+                    <p class="small">Returns the characters in a string beginning at the specified location through the specified number of characters. If length is omitted, substr() extracts characters to the end of the string.</p>
+
+                    <p><strong>.toLowerCase() & .toUpperCase()</strong></p>
+                    <p class="small">Returns the calling string value converted to declared casing.</p>
+                    <p class="small"><strong>.toLowerCase()</strong></p>
+                    <code>console.log('Rocky'.toLowerCase());  // rocky</code>
+                    <p class="small">Converts to lowercase.</p>
+                    <p class="small"><strong>.toUpperCase()</strong></p>
+                    <code>console.log('Rocky'.toUpperCase());  // ROCKY</code>
+                    <p class="small">Converts to uppercase.</p>
+
+                    <p><strong>.trim()</strong></p>
+                    <code>console.log('   rocky '.trim()); // rocky</code>
+                    <p class="small">Removes whitespace from both ends of a string.</p>
+                  </div>
+                </div>
+                <div class="row margin-top">
+                  <div class="col-6">
+                    <h1 class="text-left">Numbers</h1>
+                  </div>
+                  <div class="col-6">
+                    <p><strong>.isInteger()</strong></p>
+                    <code>console.log(Number.isInteger(5)); // true</code>
+                    <p class="small">Determines whether the passed value is an integer.</p>
+
+                    <p><strong>.parseFloat()</strong></p>
+                    <code>console.log(Number.parseFloat('5.1')); // 5.1</code>
+                    <p class="small">Parses a string argument and returns a floating point number.</p>
+
+                    <p><strong>.parseInt()</strong></p>
+                    <code>console.log(Number.parseInt('89')); // 89</code>
+                    <p class="small">Parses a string argument and returns a floating point number.</p>
+
+                    <p><strong>.isNaN()</strong></p>
+                    <code>console.log(Number.isNaN(5)); // false</code>
+                    <p class="small">Determine whether the passed value is NaN. This method returns true if the value is of the type Number, and equates to NaN. Otherwise it returns false.</p>
+                  </div>
+                </div>
+                <div class="row margin-top">
+                  <div class="col-6">
+                    <h1 class="text-left">Math</h1>
+                  </div>
+                  <div class="col-6">
+                    <p>The JavaScript Math object allows you to perform mathematical tasks on numbers.</p>
+
+                    <p><strong>Operators</strong></p>
                     <ul>
-                      <li>Go to your Repo</li>
-                      <li>Go to Settings</li>
-                      <li>Scroll down to "Github Pages"</li>
-                      <li>Under "Source", select "master branch"</li>
-                      <li>Save</li>
+                      <li>Addition</li>
+                      <code>+</code>
+                      <li>Subtraction</li>
+                      <code>-</code>
+                      <li>Multiplication</li>
+                      <code>*</code>
+                      <li>Division</li>
+                      <code>/</code>
+                      <li>Modulus</li>
+                      <code>%</code>
+                      <li>Increment</li>
+                      <code>++</code>
+                      <li>Decrement</li>
+                      <code>--</code>
+                      <li>Assignment</li>
+                      <code>=, +=, -=, *=, /=, %=</code>
                     </ul>
-                    <p>View your site at your github url</p>
+
+                    <p><strong>.round()</strong></p>
+                    <p class="small">Returns the value of a number rounded to its nearest integer.</p>
+
+                    <p><strong>.floor()</strong></p>
+                    <p class="small">Returns the value of a number rounded down to its nearest integer.</p>
+
+                    <p><strong>.ceil()</strong></p>
+                    <p class="small">Returns the value of a number rounded up to its nearest integer.</p>
+
+                    <p><strong>.random()</strong></p>
+                    <p class="small">Returns a random number between 0 (inclusive), and 1 (exclusive).</p>
+
+                    <p><strong>.min() / .max()</strong></p>
+                    <p class="small">Can be used to find the lowest or highest value in a list of arguments.</p>
+
+                    <p><strong>.pow()</strong></p>
+                    <p class="small">Takes two arguments. For example, Math.pow(x, y) returns the value of x to the power of y.</p>
+
+                    <p><strong>.sqrt()</strong></p>
+                    <p class="small">Returns the square root of a number.</p>
                   </div>
                 </div>
                 <div class="row margin-top">
                   <div class="col-6">
-                    <h1 class="text-left">Google Fonts/Font Awesome</h1>
+                    <h1 class="text-left">Date</h1>
                   </div>
                   <div class="col-6">
-                    <p><a href="http://fontawesome.io/" target="_blank">Font Awesome</a></p>
-                    <p><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></p>
+                    <p><strong>new Date()</strong></p>
+                    <code>console.log(new Date());</code>
+                    <p><strong>.getDate()</strong></p>
+                    <code>console.log(new Date().getDate());</code>
+                    <p><strong>.getDay()</strong></p>
+                    <code>console.log(new Date().getDay());</code>
+                    <p><strong>.getFullYear()</strong></p>
+                    <code>console.log(new Date().getFullYear());</code>
+                    <p><strong>.getMonth()</strong></p>
+                    <code>console.log(new Date().getMonth());</code>
                   </div>
                 </div>
                 <div class="row margin-top">
                   <div class="col-6">
-                    <h1 class="text-left">Templates</h1>
+                    <h1 class="text-left">Homework</h1>
                   </div>
                   <div class="col-6">
-                    <p><a href="https://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
-                    <p><a href="https://bootstraptaste.com/" target="_blank">Bootstrap Taste</a></p>
+                    <p>Steps:</p>
+                    <ul>
+                      <li><strong>1.</strong> Using jsfiddle</li>
+                      <li><strong>2.</strong> Follow these instructions:</li>
+<pre>
+  Pick any number, save it as variable: x
+  Multiply x by 4, save as variable: y
+  Multiply y by 5, save as variable: z
+  Divide z from x, save as variable: a
+  Subtract 7 from a, save as variable: answer
+  console log answer to view your result
+</pre>
+                      <li><strong>3.</strong> To complete your assignment: click "Save"</li>
+                      <li><strong>4.</strong> Send me the link to your fiddle.</li>
+                    </ul>
                   </div>
-                </div> -->
+                </div> <!-- END DAY 6 -->
               </div>
             </div>
           </div>
