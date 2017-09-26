@@ -78,12 +78,11 @@
                   </div>
                   <div class="col-8">
                     <p>Arrays</p>
-                    <!-- <p>How does it work?</p>
-                    <p>Convensions</p>
-                    <p>Reserved Words</p>
-                    <p>The Console</p>
-                    <p>Comments and Whitespace</p>
-                    <p>Alert / Confirm / Prompt</p> -->
+                    <p>Array Methods</p>
+                    <p>Loops</p>
+                    <p>Comparison & Logical Operators</p>
+                    <p>If, Else If & Else</p>
+                    <p>Practice</p>
                   </div>
                 </div>
                 <div class="row margin-top">
@@ -104,54 +103,96 @@
                   </div>
                   <div class="col-8">
                     <iframe width="100%" height="300" src="//jsfiddle.net/purplyrocky/rcodpojq/embedded/js/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-                  </div>
-                </div>
-                <!-- <div class="row margin-top">
-                  <div class="col-6">
-                    <h1 class="text-left">Alert / Confirm / Prompt</h1>
-                  </div>
-                  <div class="col-6">
-                    <p><strong>alert()</strong></p>
-                    <code>alert("This is an alert! Click ok to continue.");</code>
-                    <p class="small">The alert() method displays an alert box with a specified message and an OK button.</p>
-                    <p class="small">An alert box is often used if you want to make sure information comes through to the user.</p>
-
-                    <p><strong>confirm()</strong></p>
-                    <code>confirm("Here's an interesting offer. Do you say OK and take it, or Cancel the offer and run away.");</code>
-                    <p class="small">The confirm() method displays a dialog box with a specified message, along with an OK and a Cancel button.</p>
-                    <p class="small">A confirm box is often used if you want the user to verify or accept something.</p>
-                    <p>The confirm() returns a true or false value that can be captured based on the users selection.</p>
-                    <pre>var answer = confirm("Okay or Cancel?");
-console.log(answer);</pre>
-
-                    <p><strong>prompt()</strong></p>
-                    <p class="small">The prompt() method displays a dialog box that prompts the visitor for input.</p>
-                    <p class="small">A prompt box is often used if you want the user to input a value before entering a page.</p>
-                    <code>prompt("What is your name?");</code>
-                    <p class="small">The prompt() returns whatever the user types into the text box.</p>
-                    <p class="small"><strong>Note: </strong>For the prompt(), the returned value will always be a string.</p>
-                    <pre>var username = prompt("What is your name?");
-console.log(username);</pre>
+                    <p><strong>.sort()</strong></p>
+                    <p class="small">The method sorts the elements of an array in place and returns the array. The default sort order is according to string Unicode code points.</p>
+                    <iframe width="100%" height="300" src="//jsfiddle.net/purplyrocky/3c9fv2md/embedded/js/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                    <p>Here's a breakdown of the calculation:</p>
+                    <p class="small"><strong>2</strong>, <strong>4</strong>, 5, 1, 3 — 2 is less than 4, move to the next two.</p>
+                    <p class="small">2, <strong>4</strong>, <strong>5</strong>, 1, 3 — 4 is less than 5, move to the next two.</p>
+                    <p class="small">2, 4, <strong>5</strong>, <strong>1</strong>, 3 — 5 is greater than 1... flip the numbers and work backward.</p>
+                    <p class="small">2, <strong>4</strong>, <strong>1</strong>, 5, 3 — 4 is greater than 1... flip the numbers and work backward.</p>
+                    <p class="small"><strong>2</strong>, <strong>1</strong>, 4, 5, 3 — 2 is greater than 1... flip the numbers. Continue from the index that began the direction shift.</p>
+                    <p class="small">1, 2, 4, <strong>5</strong>, <strong>3</strong> — 5 is greater than 3... flip the numbers and work backward.</p>
+                    <p class="small">1, 2, <strong>4</strong>, <strong>3</strong>, 5 — 4 is greater than 3... flip the numbers and work backward.</p>
+                    <p class="small">1, <strong>2</strong>, <strong>3</strong>, 4, 5 — 2 is less than 3... sorting complete.</p>
                   </div>
                 </div>
                 <div class="row margin-top">
-                  <div class="col-6">
-                    <h1 class="text-left">Practice</h1>
+                  <div class="col-4">
+                    <h1 class="text-left">Loops</h1>
                   </div>
-                  <div class="col-6">
-                    <p>Steps:</p>
+                  <div class="col-8">
+                    <p>The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop.</p>
+                    <p>Loops are handy, if you want to run the same code over and over again, each time with a different value.</p>
+                    <iframe width="100%" height="300" src="//jsfiddle.net/purplyrocky/xLbkudpr/embedded/js/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                  </div>
+                </div>
+                <div class="row margin-top">
+                  <div class="col-4">
+                    <h1 class="text-left">Comparison & Logical Operators</h1>
+                  </div>
+                  <div class="col-8">
+                    <p>Comparison Operators</p>
                     <ul>
-                      <li><strong>1.</strong> Clone assignment Repo <a href="https://classroom.github.com/a/EuqNmg_z" target="_blank">here</a>.</li>
-                      <li><strong>2.</strong> Create a new branch called <code>homework</code></li>
-                      <li><strong>3.</strong> Follow instructions in the js file</li>
-                      <li><strong>4.</strong> To complete your assignment: add, commit, and push your code.</li>
-                      <li><strong>5.</strong> Create a Pull Request. Make sure you tag me in the PR or send me the link.</li>
-                      <li><strong>6.</strong> Once I approve your PR, merge and close your pull request</li>
-                      <li><strong>7.</strong> Delete your practice branch both locally and on github.com (optional)</li>
+                      <li>Equal to</li>
+                      <code>==</code>
+                      <li>Strict equal to (compares both value AND type)</li>
+                      <code>===</code>
+                      <li>Not equal to</li>
+                      <code>!=</code>
+                      <li>Strict not equal to (not value OR type)</li>
+                      <code>!==</code>
+                      <li>Greater than</li>
+                      <code>></code>
+                      <li>Less than</li>
+                      <code><</code>
+                      <li>Greater than or equal to</li>
+                      <code>>=</code>
+                      <li>Less than or equal to</li>
+                      <code><=</code>
+                    </ul>
+                    <p>Logical Operators</p>
+                    <ul>
+                      <li>And</li>
+                      <code>&&</code>
+                      <li>Or</li>
+                      <code>||</code>
+                      <li>Not</li>
+                      <code>!</code>
                     </ul>
                   </div>
-                </div>  -->
-                <!-- END DAY 7 -->
+                </div>
+                <div class="row margin-top">
+                  <div class="col-4">
+                    <h1 class="text-left">If, Else If & Else</h1>
+                  </div>
+                  <div class="col-8">
+                    <p>The if statement executes a statement if a specified condition is truthy. If the condition is falsy, another statement can be executed.</p>
+                    <iframe width="100%" height="300" src="//jsfiddle.net/purplyrocky/uyk1hLdy/embedded/js/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                  </div>
+                </div>
+                <div class="row margin-top">
+                  <div class="col-4">
+                    <h1 class="text-left">Practice</h1>
+                  </div>
+                  <div class="col-8">
+                    <p>Click "Edit in jsfiddle"</p>
+                    <p>Click "Fork" to edit the code</p>
+                    <iframe width="100%" height="300" src="//jsfiddle.net/purplyrocky/1k3z3dup/embedded/js/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                  </div>
+                </div>
+                <div class="row margin-top">
+                  <div class="col-4">
+                    <h1 class="text-left">Homework</h1>
+                  </div>
+                  <div class="col-8">
+                    <p>Click "Edit in jsfiddle"</p>
+                    <p>Click "Fork" to edit the code</p>
+                    <p>Complete assignment and Save</p>
+                    <p>Slack me your links</p>
+                    <iframe width="100%" height="300" src="//jsfiddle.net/purplyrocky/2yr9jL94/embedded/js/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                  </div>
+                </div>  <!-- END DAY 7 -->
                 <!-- <div class="row margin-top">
                   <div class="col-6">
                     <h1 class="text-left"><strong>Day 6</strong></h1>
