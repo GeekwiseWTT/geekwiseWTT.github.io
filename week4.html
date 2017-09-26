@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>WTT - Week 4</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="vendor/font-awesome/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700|Open+Sans:300,400" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <!-- Override styles -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="index.html">
+                        Women Tech Training
+                    </a>
+                </li>
+                <li>
+                    <a href="week1.html">Week 1</a>
+                </li>
+                <li>
+                    <a href="week2.html">Week 2</a>
+                </li>
+                <li>
+                    <a href="week3.html">Week 3</a>
+                </li>
+                <li>
+                    <a href="week4.html">Week 4</a>
+                </li>
+                <!-- <li>
+                    <a href="#">Week 5</a>
+                </li>
+                <li>
+                    <a href="#">Week 6</a>
+                </li>
+                <li>
+                    <a href="#">Week 7</a>
+                </li>
+                <li>
+                    <a href="#">Week 8</a>
+                </li> -->
+                <li>
+                    <a href="https://geekwisewtt.github.io/resources" target="_blank">Resources</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+          <a href="#menu-toggle" class="btn btn-lg" id="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a>
+          <div class="container-fluid">
+            <h1 class="text-center title">Week 4</h1>
+            <div class="row justify-content-md-center">
+              <div class="col col-md-8">
+                <div class="row">
+                  <div class="col-6">
+                    <h1 class="text-left"><strong>Day 7</strong></h1>
+                  </div>
+                  <div class="col-6">
+                    <p>Arrays</p>
+                    <!-- <p>How does it work?</p>
+                    <p>Convensions</p>
+                    <p>Reserved Words</p>
+                    <p>The Console</p>
+                    <p>Comments and Whitespace</p>
+                    <p>Alert / Confirm / Prompt</p> -->
+                  </div>
+                </div>
+                <div class="row margin-top">
+                  <div class="col-6">
+                    <h1 class="text-left">Arrays</h1>
+                  </div>
+                  <div class="col-6">
+                    <p class="small">The JavaScript Array object is a global object that is used in the construction of arrays; which are list-like objects. Arrays are used to store multiple values in a single variable. Arrays can also store different types of elements. You can put objects, entire functions or other arrays into arrays!</p>
+                    <p class="small">Arrays are zero based and every item has a corresponding index.</p>
+                    <iframe width="100%" height="300" src="//jsfiddle.net/purplyrocky/bp3to4b4/embedded/js/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                    <p class="small"><strong>Note: </strong>The forEach() loop is a special type of loop used exclusively for Arrays. It offers a lot of options for accessing the contents of an Array. There are many other types of loops that we'll be exploring soon.</p>
+                    <p class="small"><strong>Note: </strong>Inside of the forEach() is an anonymous function. This function —as shown between the perenthesis— is expecting two things: an item and an index. These "expectations" are called parameters, and are being provided by the forEach() loop.</p>
+                  </div>
+                </div>
+                <!-- <div class="row margin-top">
+                  <div class="col-6">
+                    <h1 class="text-left">The Console</h1>
+                  </div>
+                  <div class="col-6">
+                    <p class="small">This is where we will do all of our debugging. If an error is "thrown", you'll see it here. To access the console, right click anywhere on the browser window and select "Inspect element" then select the "Console" tab.</p>
+                    <p>Methods: </p>
+                    <p><strong>.log()</strong></p>
+                    <code>console.log('Message in the console.');</code>
+                    <p class="small">Displays a simple message in the console and includes a link to the source of the message.</p>
+
+                    <p><strong>.info()</strong></p>
+                    <code>console.info('Info message in the console.');</code>
+                    <p class="small">Displays a message with an information icon and includes a link to the source of the message.</p>
+
+                    <p><strong>.warn()</strong></p>
+                    <code>console.warn('Warning message in the console.');</code>
+                    <p class="small">Displays a message with a warning icon and includes a link to the source of the message.</p>
+
+                    <p><strong>.error()</strong></p>
+                    <code>console.error('Error message in the console.');</code>
+                    <p class="small">Displays a message with an error icon and includes a link to the source of the message.</p>
+
+                    <p><strong>.dir()</strong></p>
+                    <code>console.dir([4, false, 'Ian Malcolm']);</code>
+                    <p class="small">Displays an interactive list of an object's properties.</p>
+                  </div>
+                </div>
+                <div class="row margin-top">
+                  <div class="col-6">
+                    <h1 class="text-left">Comments and Whitespace</h1>
+                  </div>
+                  <div class="col-6">
+                    <p>Comments</p>
+                    <p class="small">JS comment syntax is similar to comments in CSS</p>
+                    <pre>//single line comment</pre>
+                    <pre>/*
+  multi
+  line
+  comments
+*/</pre>
+                    <p>Whitespace</p>
+                    <p class="small">Unlike most other programming languages, JavaScript is very loose in its requirements leaving much leeway for the developer to write their code the way they want.</p>
+                    <pre>var
+
+                        freedom
+
+        =
+
+
+            "You \
+    can                     do \
+        a   lot     of                 what \
+    you want"
+
+
+;
+                    </pre>
+                  </div>
+                </div>
+                <div class="row margin-top">
+                  <div class="col-6">
+                    <h1 class="text-left">Alert / Confirm / Prompt</h1>
+                  </div>
+                  <div class="col-6">
+                    <p><strong>alert()</strong></p>
+                    <code>alert("This is an alert! Click ok to continue.");</code>
+                    <p class="small">The alert() method displays an alert box with a specified message and an OK button.</p>
+                    <p class="small">An alert box is often used if you want to make sure information comes through to the user.</p>
+
+                    <p><strong>confirm()</strong></p>
+                    <code>confirm("Here's an interesting offer. Do you say OK and take it, or Cancel the offer and run away.");</code>
+                    <p class="small">The confirm() method displays a dialog box with a specified message, along with an OK and a Cancel button.</p>
+                    <p class="small">A confirm box is often used if you want the user to verify or accept something.</p>
+                    <p>The confirm() returns a true or false value that can be captured based on the users selection.</p>
+                    <pre>var answer = confirm("Okay or Cancel?");
+console.log(answer);</pre>
+
+                    <p><strong>prompt()</strong></p>
+                    <p class="small">The prompt() method displays a dialog box that prompts the visitor for input.</p>
+                    <p class="small">A prompt box is often used if you want the user to input a value before entering a page.</p>
+                    <code>prompt("What is your name?");</code>
+                    <p class="small">The prompt() returns whatever the user types into the text box.</p>
+                    <p class="small"><strong>Note: </strong>For the prompt(), the returned value will always be a string.</p>
+                    <pre>var username = prompt("What is your name?");
+console.log(username);</pre>
+                  </div>
+                </div>
+                <div class="row margin-top">
+                  <div class="col-6">
+                    <h1 class="text-left">Practice</h1>
+                  </div>
+                  <div class="col-6">
+                    <p>Steps:</p>
+                    <ul>
+                      <li><strong>1.</strong> Clone assignment Repo <a href="https://classroom.github.com/a/EuqNmg_z" target="_blank">here</a>.</li>
+                      <li><strong>2.</strong> Create a new branch called <code>homework</code></li>
+                      <li><strong>3.</strong> Follow instructions in the js file</li>
+                      <li><strong>4.</strong> To complete your assignment: add, commit, and push your code.</li>
+                      <li><strong>5.</strong> Create a Pull Request. Make sure you tag me in the PR or send me the link.</li>
+                      <li><strong>6.</strong> Once I approve your PR, merge and close your pull request</li>
+                      <li><strong>7.</strong> Delete your practice branch both locally and on github.com (optional)</li>
+                    </ul>
+                  </div>
+                </div> END DAY 7 -->
+                <!-- <div class="row margin-top">
+                  <div class="col-6">
+                    <h1 class="text-left"><strong>Day 6</strong></h1>
+                  </div>
+                  <div class="col-6">
+                    <p>Strings</p>
+                    <p>Numbers</p>
+                    <p>Math</p>
+                    <p>Date</p>
+                    <p>Challenge</p>
+                  </div>
+                </div>
+                <div class="row margin-top">
+                  <div class="col-6">
+                    <h1 class="text-left">Strings</h1>
+                  </div>
+                  <div class="col-6">
+                    <p><strong>.length</strong></p>
+                    <code>console.log('rocky'.length); // 5</code>
+                    <p class="small">The length property represents the length of a string.</p>
+
+                    <p><strong>.charAt()</strong></p>
+                    <code>console.log('rocky'.charAt(2)); // c</code>
+                    <p class="small">Returns the character at the specified index (position)</p>
+
+                    <p><strong>.indexOf()</strong></p>
+                    <code>console.log('rocky'.indexOf('k')); // 3</code>
+                    <p class="small">Returns the position of the first found occurrence of a specified value in a string</p>
+
+                    <p><strong>.concat()</strong></p>
+                    <code>console.log('rocky'.concat(' garcia')); // rocky garcia</code>
+                    <p class="small">Combines the text of two strings and returns a new string.</p>
+
+                    <p><strong>.substring() & .substr()</strong></p>
+                    <p class="small">Extracts the characters from a string</p>
+                    <p class="small"><strong>.substring()</strong></p>
+                    <code>console.log('rocky'.substring(1, 3));  // oc</code>
+                    <p class="small">Returns a subset of a string between one index and another, or through the end of the string.</p>
+                    <p class="small"><strong>.substr()</strong></p>
+                    <code>console.log('rocky'.substr(1, 3));  // ock</code>
+                    <p class="small">Returns the characters in a string beginning at the specified location through the specified number of characters. If length is omitted, substr() extracts characters to the end of the string.</p>
+
+                    <p><strong>.toLowerCase() & .toUpperCase()</strong></p>
+                    <p class="small">Returns the calling string value converted to declared casing.</p>
+                    <p class="small"><strong>.toLowerCase()</strong></p>
+                    <code>console.log('Rocky'.toLowerCase());  // rocky</code>
+                    <p class="small">Converts to lowercase.</p>
+                    <p class="small"><strong>.toUpperCase()</strong></p>
+                    <code>console.log('Rocky'.toUpperCase());  // ROCKY</code>
+                    <p class="small">Converts to uppercase.</p>
+
+                    <p><strong>.trim()</strong></p>
+                    <code>console.log('   rocky '.trim()); // rocky</code>
+                    <p class="small">Removes whitespace from both ends of a string.</p>
+                  </div>
+                </div>
+                <div class="row margin-top">
+                  <div class="col-6">
+                    <h1 class="text-left">Numbers</h1>
+                  </div>
+                  <div class="col-6">
+                    <p><strong>.isInteger()</strong></p>
+                    <code>console.log(Number.isInteger(5)); // true</code>
+                    <p class="small">Determines whether the passed value is an integer.</p>
+
+                    <p><strong>.parseFloat()</strong></p>
+                    <code>console.log(Number.parseFloat('5.1')); // 5.1</code>
+                    <p class="small">Parses a string argument and returns a floating point number.</p>
+
+                    <p><strong>.parseInt()</strong></p>
+                    <code>console.log(Number.parseInt('89')); // 89</code>
+                    <p class="small">Parses a string argument and returns a floating point number.</p>
+
+                    <p><strong>.isNaN()</strong></p>
+                    <code>console.log(Number.isNaN(5)); // false</code>
+                    <p class="small">Determine whether the passed value is NaN. This method returns true if the value is of the type Number, and equates to NaN. Otherwise it returns false.</p>
+                  </div>
+                </div>
+                <div class="row margin-top">
+                  <div class="col-6">
+                    <h1 class="text-left">Math</h1>
+                  </div>
+                  <div class="col-6">
+                    <p>The JavaScript Math object allows you to perform mathematical tasks on numbers.</p>
+
+                    <p><strong>Operators</strong></p>
+                    <ul>
+                      <li>Addition</li>
+                      <code>+</code>
+                      <li>Subtraction</li>
+                      <code>-</code>
+                      <li>Multiplication</li>
+                      <code>*</code>
+                      <li>Division</li>
+                      <code>/</code>
+                      <li>Modulus</li>
+                      <code>%</code>
+                      <li>Increment</li>
+                      <code>++</code>
+                      <li>Decrement</li>
+                      <code>--</code>
+                      <li>Assignment</li>
+                      <code>=, +=, -=, *=, /=, %=</code>
+                    </ul>
+
+                    <p><strong>.round()</strong></p>
+                    <p class="small">Returns the value of a number rounded to its nearest integer.</p>
+
+                    <p><strong>.floor()</strong></p>
+                    <p class="small">Returns the value of a number rounded down to its nearest integer.</p>
+
+                    <p><strong>.ceil()</strong></p>
+                    <p class="small">Returns the value of a number rounded up to its nearest integer.</p>
+
+                    <p><strong>.random()</strong></p>
+                    <p class="small">Returns a random number between 0 (inclusive), and 1 (exclusive).</p>
+
+                    <p><strong>.min() / .max()</strong></p>
+                    <p class="small">Can be used to find the lowest or highest value in a list of arguments.</p>
+
+                    <p><strong>.pow()</strong></p>
+                    <p class="small">Takes two arguments. For example, Math.pow(x, y) returns the value of x to the power of y.</p>
+
+                    <p><strong>.sqrt()</strong></p>
+                    <p class="small">Returns the square root of a number.</p>
+                  </div>
+                </div>
+                <div class="row margin-top">
+                  <div class="col-6">
+                    <h1 class="text-left">Date</h1>
+                  </div>
+                  <div class="col-6">
+                    <p><strong>new Date()</strong></p>
+                    <code>console.log(new Date());</code>
+                    <p><strong>.getDate()</strong></p>
+                    <code>console.log(new Date().getDate());</code>
+                    <p><strong>.getDay()</strong></p>
+                    <code>console.log(new Date().getDay());</code>
+                    <p><strong>.getFullYear()</strong></p>
+                    <code>console.log(new Date().getFullYear());</code>
+                    <p><strong>.getMonth()</strong></p>
+                    <code>console.log(new Date().getMonth());</code>
+                  </div>
+                </div>
+                <div class="row margin-top">
+                  <div class="col-6">
+                    <h1 class="text-left">Homework</h1>
+                  </div>
+                  <div class="col-6">
+                    <p>Steps:</p>
+                    <ul>
+                      <li><strong>1.</strong> Using jsfiddle</li>
+                      <li><strong>2.</strong> Follow these instructions:</li>
+<pre>
+  Pick any number, save it as variable: x
+  Multiply x by 4, save as variable: y
+  Multiply y by 5, save as variable: z
+  Divide z from x, save as variable: a
+  Subtract 7 from a, save as variable: answer
+  console log answer to view your result
+</pre>
+                      <li><strong>3.</strong> To complete your assignment: click "Save"</li>
+                      <li><strong>4.</strong> Send me the link to your fiddle.</li>
+                    </ul>
+                  </div>
+                </div> <!-- END DAY 6 --> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
