@@ -178,87 +178,87 @@
                     <p>Send me a link to your Repos</p>
                   </div>
                 </div>  <!-- END DAY 11 -->
-                <!-- <div class="row margin-top">
+                <div class="row margin-top">
                   <div class="col-4">
                     <h1 class="text-left"><strong>Day 12</strong></h1>
                   </div>
                   <div class="col-8">
                     <p>Recreate reddit homework in Angular2</p>
-                    <p>Browser Storage</p>
-                    <p>JSON</p>
-                    <p>XMLHttpRequest()</p>
-                    <p>Closure</p>
+                    <p>HttpClient</p>
+                    <p>Routing</p>
+                    <p>Services</p>
+                    <p>DOM with Angular</p>
                   </div>
                 </div>
                 <div class="row margin-top">
                   <div class="col-4">
-                    <h1 class="text-left">Timers</h1>
+                    <h1 class="text-left">Recreate reddit homework</h1>
                   </div>
                   <div class="col-8">
-                    <iframe width="100%" height="300" src="//jsfiddle.net/purplyrocky/cLh6vnew/embedded/js,html,result/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                    <ul>
+                      <li>Start in <code>app.component</code></li>
+                      <li>Decorators</li>
+                      <li>Anatomy of @Component</li>
+                    </ul>
                   </div>
                 </div>
                 <div class="row margin-top">
                   <div class="col-4">
-                    <h1 class="text-left">Browser Storage</h1>
+                    <h1 class="text-left">HttpClient</h1>
                   </div>
                   <div class="col-8">
-                    <p><strong>localStorage</strong></p>
-                    <p>The localStorage property allows you to access a local Storage object. Data stored in localStorage has no expiration time. Active tab can be refreshed, same destination can be opened in a new tab and data remains, and browser can be completely closed, but upon return to same destination, data remains.</p>
-                    <iframe width="100%" height="300" src="//jsfiddle.net/purplyrocky/svfbganj/embedded/js/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-
-                    <p><strong>sessionStorage</strong></p>
-                    <p>The sessionStorage property allows you to access a session Storage object for the current origin. Data stored in sessionStorage gets cleared when the page session ends. A page session lasts for as long as the browser is open and survives over page reloads and restores. Opening a page in a new tab or window will cause a new session to be initiated.</p>
-                    <iframe width="100%" height="300" src="//jsfiddle.net/purplyrocky/8oys0ajw/embedded/js/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                    <p>Observables/Async</p>
+                    <p><a href="http://reactivex.io/rxjs/manual/index.html">rxjs</a></p>
                   </div>
                 </div>
                 <div class="row margin-top">
                   <div class="col-4">
-                    <h1 class="text-left">JSON</h1>
+                    <h1 class="text-left">Routing</h1>
                   </div>
                   <div class="col-8">
-                    <p>JSON, or JavaScript Object Notation, is a minimal, readable format for structuring data. It is used primarily to transmit data between a server and web application.</p>
-                    <p>The two primary parts that make up JSON are keys and values. Together they make a key/value pair.</p>
-                    <p><code>"characterName" : "Mufasa"</code></p>
-                    <p><code>characterName</code> is the <strong>key</strong>, and <code>Mufasa</code> is the <strong>value</strong>.</p>
-                    <iframe width="100%" height="300" src="//jsfiddle.net/purplyrocky/ku8qj30e/embedded/js/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                    <p><a href="https://angular.io/guide/router" target="_blank">Router Docs</a></p>
+                    <ul>
+                      <li>Base href</li>
+                      <li><code><base href="/"></code></li>
+                      <li>Router Imports</li>
+                      <li><code>import { RouterModule, Routes } from '@angular/router';</code></li>
+                      <li>Router Outlet</li>
+                      <li><code><router-outlet></router-outlet></code></li>
+                      <li>Router Links</li>
+                      <li><code><a routerLink="/post/{{post.id}}" routerLinkActive="active">Post 1</a></code></li>
+                      <li>Router Events</li>
+                      <li><a href="https://angular.io/guide/router#router-events">Event List</a></li>
+                    </ul>
                   </div>
                 </div>
                 <div class="row margin-top">
                   <div class="col-4">
-                    <h1 class="text-left">XMLHttpRequest()</h1>
+                    <h1 class="text-left">Services</h1>
                   </div>
                   <div class="col-8">
-                    <p>XMLHttpRequest is an API that provides client functionality for transferring data between a client and a server. It provides an easy way to retrieve data from a URL without having to do a full page refresh. This enables a Web page to update just a part of the page without disrupting what the user is doing.</p>
-                    <p>Everything begins however with a new instance of the <strong>XMLHttpRequest()</strong></p>
-                    <p><code>var req = new XMLHttpRequest();</code></p>
-                    <iframe width="100%" height="300" src="//jsfiddle.net/purplyrocky/fa9Ledzc/embedded/js/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                    <p>Component logic should be component specific, anything generic, abstract, or reusable should live in services.</p>
+                    <p>MVC</p>
+                    <p>Refactor api call into <code>api.service.ts</code></p>
+                    <p>API calls can be made from any component</p>
+                    <p>Make <code>api.module.ts</code>, import service into it</p>
+                    <p>Modules are the glue that holds together sets of services and components</p>
+                    <p>Remember, you can GET, POST, PUT, DELETE</p>
                   </div>
-                </div> -->
-                <!-- <div class="row margin-top">
-                  <div class="col-4">
-                    <h1 class="text-left">Closure</h1>
-                  </div>
-                  <div class="col-8">
-                    <iframe width="100%" height="300" src="//jsfiddle.net/purplyrocky/c4p8w97w/embedded/js/dark/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-                  </div>
+                </div>
                 </div>
                 <div class="row margin-top">
                   <div class="col-4">
-                    <h1 class="text-left">Homework</h1>
+                    <h1 class="text-left">DOM with Angular</h1>
                   </div>
                   <div class="col-8">
-                    <p>Fork this repository <a href="https://github.com/GeekwiseWTT/magic8ball" target="_blank">Magic 8 ball Challenge</a></p>
-                    <p>Clone to your laptop</p>
-                    <p>Create a new branch</p>
-                    <p>Complete the assignment</p>
-                    <p>Push your work to Github</p>
-                    <p>Create a Pull Request</p>
-                    <p>Slack me your Pull Request</p>
-                    <p>After your work has been merged in, set master to host gh-pages</p>
-                    <p>Send me the link to your live site</p>
+                    <p>ngFor</p>
+                    <p>ngIf</p>
+                    <p>template syntax - [hidden], [disabled]</p>
+                    <p>events</p>
+                    <p>ngClass</p>
+                    <p>ngModel</p>
                   </div>
-                </div> END DAY 10 -->
+                </div> <!-- END DAY 12 -->
               </div>
             </div>
           </div>
